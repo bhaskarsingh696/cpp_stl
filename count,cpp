@@ -1,0 +1,19 @@
+/*
+You are given an integer n. You need to return the number of digits in the number.
+The number will have no leading zeroes, except when the number is 0 itself.
+
+*/
+// code 
+# include <bits/stdc++.h>
+using namespace std;
+int countDigits(int n){
+    int cnt = (int)(log10(n)+1);
+    return cnt;
+}
+int main() {
+    int N = 329823;
+    cout << "N: "<< N << endl;
+    int digits = countDigits(N);
+    cout << "Number of Digits in N: "<< digits << endl;
+    return 0;
+}
